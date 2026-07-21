@@ -4,6 +4,7 @@ import UIKit
 /// button), the keyboard, and the AI panel; manages the input-view height when
 /// the panel is shown; and routes typing to the text document proxy. Typing is
 /// fully synchronous and never blocked by AI work.
+@objc(KeyboardViewController)
 final class KeyboardViewController: UIInputViewController {
 
     private let suggestionBar = UIView()
