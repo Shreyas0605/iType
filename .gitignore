@@ -1,0 +1,9 @@
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+*.ipa
+Payload/
+# Never commit secrets. The Gemini API key is entered at runtime and stored in
+# the Keychain / App Group on-device — it is never part of this repository.
