@@ -51,9 +51,15 @@ final class KeyboardView: UIView {
     init() {
         super.init(frame: .zero)
         backgroundColor = .clear
-        rebuild()
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) not supported") }
+
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        if superview != nil && rowButtons.isEmpty {
+            rebuild()
+        }
+    }
 
     // MARK: - Build & layout
 

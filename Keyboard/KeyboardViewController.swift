@@ -9,10 +9,10 @@ final class KeyboardViewController: UIInputViewController {
     private let suggestionBar = UIView()
     private let aiButton = UIButton(type: .system)
     private var predictionButtons: [UIButton] = []
-    private let keyboardView = KeyboardView()
-    private let panel = AIPanelView()
-    private let engine = RewriteEngine()
-    private let predictor = WordPredictor()
+    private lazy var keyboardView = KeyboardView()
+    private lazy var panel = AIPanelView()
+    private lazy var engine = RewriteEngine()
+    private lazy var predictor = WordPredictor()
 
     private var heightConstraint: NSLayoutConstraint?
     private var panelVisible = false
